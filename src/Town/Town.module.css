@@ -1,0 +1,6 @@
+.app_town {
+    display: flex;
+    flex-basis: 70%;
+    height: 100vh;
+    background-color: darkseagreen;
+}

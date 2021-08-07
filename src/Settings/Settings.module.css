@@ -1,0 +1,10 @@
+
+.app_settings {
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgoldenrod;
+    height: 80vh;
+}

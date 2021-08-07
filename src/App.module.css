@@ -1,0 +1,9 @@
+.app {
+    background-color: lightpink;
+}
+
+.app_settings_town {
+    display: flex;
+    height: 100%;
+    background-color: dodgerblue;
+}

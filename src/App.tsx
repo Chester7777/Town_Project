@@ -1,15 +1,20 @@
 import React from 'react';
-import './App.css';
+import s from './App.module.css';
+import {Settings} from "./Settings/Settings";
+import {Town} from "./Town/Town";
 
 function App() {
-  return (
-    <div className="App">
-
-
-
-
-    </div>
-  );
+    return (
+        <div className={s.app}>
+            <header className={s.app_header}>
+                <h1>City Builder</h1>
+            </header>
+            <div className={s.app_settings_town}>
+                <Settings/>
+                <Town/>
+            </div>
+        </div>
+    );
 }
 
 export default App;
