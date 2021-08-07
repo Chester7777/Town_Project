@@ -33,7 +33,7 @@ export const IntegerStep = () => {
                     style={{margin: '0 16px'}}
                     value={inputValue}
                     onChange={onChange}
-                    // disabled={disabled}
+                    disabled={disabled}
                 />
                 Disabled: <Switch size="small" checked={disabled} onChange={handleDisabledChange}/>
             </Col>
