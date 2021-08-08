@@ -7,7 +7,7 @@ export const IntegerStep = () => {
     let [inputValue, setInputValue] = useState<number>(1);
 
     const handleDisabledChange = () => {
-        setDisabled(true)
+        setDisabled(!disabled)
     }
     const onChange = (value: number) => {
         setInputValue(
