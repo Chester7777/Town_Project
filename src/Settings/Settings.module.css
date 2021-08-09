@@ -8,3 +8,19 @@
     background-color: darkgoldenrod;
     height: 80vh;
 }
+
+.Header_setting {
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+    background-color: lightslategrey;
+}
+
+.Footer_setting {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    background-color: lightslategrey;
+}
