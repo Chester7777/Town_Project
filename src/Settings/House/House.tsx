@@ -2,7 +2,7 @@ import s from "./House.module.css";
 import {IntegerStep} from "./IntegerStep";
 import {SelectColor} from "./SelectColor";
 import 'antd/dist/antd.css';
-import {DeleteOutlined} from "@ant-design/icons";
+import {DeleteButton} from "./DeleteOutlined";
 
 
 export const House = () => {
@@ -15,8 +15,7 @@ export const House = () => {
         <div>
             <SelectColor/>
         </div>
-        <DeleteOutlined />
-
+        <DeleteButton/>
     </div>
 }
 
