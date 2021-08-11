@@ -1,6 +1,6 @@
 import s from "./Settings.module.css";
-import {House} from "./House/House";
 import {HomeOutlined} from "@ant-design/icons";
+import {Setting} from "./Settings/Setting";
 
 
 export const Settings = () => {
@@ -9,10 +9,10 @@ export const Settings = () => {
         <header className={s.Header_setting}>
             {"Houses List"}
         </header>
-        <House/>
-        <House/>
-        <House/>
-        <House/>
+        <Setting/>
+        <Setting/>
+        <Setting/>
+        <Setting/>
         <footer className={s.Footer_setting}>
             <button><HomeOutlined /> Build a new house</button>
         </footer>

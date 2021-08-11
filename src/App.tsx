@@ -11,7 +11,9 @@ function App() {
             </header>
             <div className={s.app_settings_town}>
                 <Settings/>
-                <Town/>
+                {/*<div className={s.app_town}>*/}
+                    <Town/>
+                {/*</div>*/}
             </div>
         </div>
     );

@@ -1,6 +1,73 @@
-.app_town {
+.town {
     display: flex;
-    flex-basis: 70%;
-    height: 100vh;
-    background-color: darkseagreen;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: auto;
+    min-width: 20%;
 }
+
+.town_roof {
+    display: flex;
+    justify-content: center;
+}
+
+.roof {
+    width: 100%;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+}
+
+
+.town_floor {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: yellow;
+    border: black solid 3px;
+}
+
+.town_floor_window_1 {
+
+    height: 50px;
+    width: 40px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    border: black solid 2px;
+    background-color: aliceblue;
+}
+
+.town_floor_window_2 {
+    height: 50px;
+    width: 40px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    border: black solid 2px;
+    background-color: aliceblue;
+}
+
+.town_basement {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: flex-end;
+    border: black solid 3px;
+    background-color: blueviolet;
+}
+
+.town_door {
+    height: 70px;
+    width: 50px;
+    border: black solid 2px;
+    background-color: aliceblue;
+}
+
+.town_window {
+    display: flex;
+    height: 50px;
+    width: 40px;
+    margin-bottom: 30px;
+    border: black solid 2px;
+    background-color: aliceblue;
+}
+
