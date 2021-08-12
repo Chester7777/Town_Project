@@ -12,7 +12,7 @@ function App() {
             <div className={s.app_settings_town}>
                 <Settings/>
                 {/*<div className={s.app_town}>*/}
-                    <Town/>
+                <Town/>
                 {/*</div>*/}
             </div>
         </div>
