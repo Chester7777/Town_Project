@@ -8,16 +8,12 @@ type FloorType = {
     isDone: boolean
 }
 
-type InitialStateType = {
-    houseId: string
-    // title: string
-    isDone: boolean
-}
-const initialState: InitialStateType = {
+type InitialStateType = Array<FloorType>
+const initialState: InitialStateType = [{
     houseId: "1",
     // title: "",
     isDone: false
-}
+}]
 
 
 export const houseReducer = (state = initialState, action: ActionType): InitialStateType => {
@@ -26,14 +22,14 @@ export const houseReducer = (state = initialState, action: ActionType): InitialS
              {
                 // ...state,
                 // houseId: action.houseId
-                const stateCopy = {...state}
+                let stateCopy = {...state}
                 const newFloor: FloorType = {
             houseId: v1(),
             isDone: false
         }
-            const floors = stateCopy[action.houseId];
-            const newTasks = [newFloor, ...floors];
-            stateCopy[action.houseId] = newFloor;
+            // const floors = stateCopy[action.houseId];
+            // const newTasks = [newFloor, ...floors];
+            // stateCopy[action.houseId] = newFloor;
             return stateCopy;
             }
 
@@ -45,5 +41,6 @@ export const houseReducer = (state = initialState, action: ActionType): InitialS
 type AddFloorType = {
     type: "ADD-FLOOR"
     houseId: string
+    isDone: boolean
 }
-export const addFloor = (houseId: string): AddFloorType => ({type: "ADD-FLOOR", houseId} as const)
+export const addFloor = (houseId: string, isDone: boolean): AddFloorType => ({type: "ADD-FLOOR", houseId, isDone} as const)
