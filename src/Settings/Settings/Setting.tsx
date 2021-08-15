@@ -3,7 +3,6 @@ import {IntegerStep} from "./IntegerStep";
 import {SelectColor} from "./SelectColor";
 import 'antd/dist/antd.css';
 import {DeleteButton} from "./DeleteButton";
-import {Settings} from "../Settings";
 
 
 export const Setting = () => {

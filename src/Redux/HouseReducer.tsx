@@ -1,7 +1,7 @@
 import {v1} from "uuid";
 
 
-type ActionType = AddFloorType
+type ActionType = AddFloorType | AddHouseType
 
 type FloorType = {
     houseId: string
@@ -16,7 +16,7 @@ const initialState: InitialStateType = [{
 }]
 
 
-export const houseReducer = (state = initialState, action: ActionType): InitialStateType => {
+export const houseReducer = (state: InitialStateType = initialState, action: ActionType): InitialStateType => {
     switch (action.type) {
         case "ADD-FLOOR":
              {
@@ -32,6 +32,14 @@ export const houseReducer = (state = initialState, action: ActionType): InitialS
             // stateCopy[action.houseId] = newFloor;
             return stateCopy;
             }
+        case "ADD-HOUSE":
+            return {
+                [{
+                    houseId: action.houseId,
+
+                }, ...state]
+
+            }
 
         default:
             return state
@@ -42,5 +50,10 @@ type AddFloorType = {
     type: "ADD-FLOOR"
     houseId: string
     isDone: boolean
+};
+type AddHouseType = {
+    type: "ADD-HOUSE"
+    houseId: string
 }
-export const addFloor = (houseId: string, isDone: boolean): AddFloorType => ({type: "ADD-FLOOR", houseId, isDone} as const)
+export const addFloor = (houseId: string, isDone: boolean): AddFloorType => ({type: "ADD-FLOOR", houseId, isDone} as const);
+export const addHouse = ():AddHouseType => ({type: "ADD-HOUSE", houseId: v1()})

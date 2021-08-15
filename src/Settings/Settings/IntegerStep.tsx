@@ -1,15 +1,22 @@
 import {Col, InputNumber, Row, Slider, Switch} from "antd";
 import {useState} from "react";
+import {useDispatch} from 'react-redux'
+import {addFloor} from "../../Redux/HouseReducer";
+import {v1} from "uuid";
 
 
 export const IntegerStep = () => {
     const [disabled, setDisabled] = useState<boolean>(false);
     let [inputValue, setInputValue] = useState<number>(1);
+    // const houseId = useSelector<AppRootStateType>((state) => state.house)
+    const dispatch = useDispatch();
+    const houseId = v1();
 
     const handleDisabledChange = () => {
         setDisabled(!disabled)
     }
-    const onChange = (value: number) => {
+    const onChange = (value: number, isDone?: boolean) => {
+        dispatch(addFloor(houseId, true))
         setInputValue(
             inputValue = value
         );
