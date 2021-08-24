@@ -4,10 +4,11 @@ import {Floor} from "./House/Floor";
 import {Basement} from "./House/Basement";
 
 export const Town = () => {
+    let floor = [<Floor/>]
 
     return <div className={s.town}>
         <Roof/>
-        <Floor/>
+        {floor.map(f=><div>{f}</div>)}
         <Basement/>
     </div>
 }
