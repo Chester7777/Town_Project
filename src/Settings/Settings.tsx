@@ -14,7 +14,7 @@ export const Settings = () => {
         <Setting/>
         <Setting/>
         <footer className={s.Footer_setting}>
-            <button><HomeOutlined /> Build a new house</button>
+            <button><HomeOutlined/> Build a new house</button>
         </footer>
     </div>
 }

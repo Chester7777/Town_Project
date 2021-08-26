@@ -9,7 +9,7 @@ import {Floor} from "../../Town/House/Floor";
 export const IntegerStep = () => {
     const [disabled, setDisabled] = useState<boolean>(false);
     let [inputValue, setInputValue] = useState<number>(1);
-    let [floor, setFloor] = useState([<Floor/>, <Floor/>]);
+    let [floor, setFloor] = useState([<Floor/>, <Floor/>, <Floor/>]);
     // const houseId = useSelector<AppRootStateType>((state) => state.house)
     const dispatch = useDispatch();
     const houseId = v1();

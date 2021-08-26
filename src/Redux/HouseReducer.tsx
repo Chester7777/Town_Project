@@ -37,7 +37,6 @@ export const houseReducer = (state: InitialStateType = initialState, action: Act
             //     }, ...state]
             //
             // }
-
         default:
             return state
     }

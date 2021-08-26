@@ -8,7 +8,7 @@ export const Town = () => {
 
     return <div className={s.town}>
         <Roof/>
-        {floor.map(f=><div>{f}</div>)}
+        {floor.map(f => <div>{f}</div>)}
         <Basement/>
     </div>
 }

@@ -7,7 +7,6 @@ import {DeleteButton} from "./DeleteButton";
 
 export const Setting = () => {
 
-
     return <div className={s.house}>
         <div>
             <IntegerStep/>
