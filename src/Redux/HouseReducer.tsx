@@ -30,13 +30,7 @@ export const houseReducer = (state: InitialStateType = initialState, action: Act
             // return stateCopy;
             // }
         case "ADD-HOUSE":
-            // return {
-            //     [{
-            //         houseId: action.houseId,
-            //
-            //     }, ...state]
-            //
-            // }
+
         default:
             return state
     }
