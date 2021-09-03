@@ -26,9 +26,7 @@ export const IntegerStep = () => {
             inputValue = value
         );
     };
-    // if(value !== inputValue) {
-    //     floor.map(f=><div>{f}</div>)
-    // }
+
 
     return (
         <Row>
