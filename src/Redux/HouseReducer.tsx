@@ -15,19 +15,18 @@ const initialState: InitialStateType = []
 export const houseReducer = (state: InitialStateType = initialState, action: ActionType): InitialStateType => {
     switch (action.type) {
         case "ADD-FLOOR":
+// return {
 
-             // {
-             //    ...state,
                 // houseId: action.houseId
-                // let stateCopy = {...state}
-        //         const newFloor: FloorType = {
-        //     houseId: v1(),
-        //     isDone: false
-        // }
-            // const floors = stateCopy[action.houseId];
-            // const newTasks = [newFloor, ...floors];
-            // stateCopy[action.houseId] = newFloor;
-            // return stateCopy;
+                let stateCopy = {...state}
+                const newFloor: FloorType = {
+            houseId: v1(),
+            isDone: false
+        }
+            const floors = stateCopy.find(el=> el.houseId);
+            const newTasks = [newFloor, {houseId: floors}];
+            // stateCopy = newTasks;
+            return stateCopy;
             // }
         case "ADD-HOUSE":
 
